@@ -1,0 +1,169 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+h1,
+p,
+h2,
+h3,
+#details .countDown .item,
+#home .menuBox li a,
+#home .open {
+  font-family: "Segoe UI";
+  text-align: center;
+}
+
+/* Home */
+#home .menuBox {
+  background-color: black;
+  padding-top: 40px;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  overflow: hidden;
+}
+#home .menuBox ul {
+  list-style: none;
+  padding: 0px;
+}
+#home .menuBox li {
+  margin: 30px;
+}
+#home .menuBox,
+#home .menuBox li a,
+#home .open {
+  color: white;
+}
+#home .menuBox li a {
+  font-size: x-large;
+  text-decoration: none;
+  transition: all 0.5s;
+}
+#home .menuBox li a.active {
+  color: brown;
+}
+#home .close {
+  display: flex;
+  flex-direction: row-reverse;
+  cursor: pointer;
+}
+#home .close i {
+  font-size: x-large;
+  margin-right: 40px;
+}
+#home .open {
+  cursor: pointer;
+  padding: 10px;
+  font-size: 1.5rem;
+}
+
+#home {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 45rem;
+  background-image: linear-gradient(rgba(255, 0, 0, 0.4), rgba(255, 0, 0, 0.4)),
+    url(../images/events-heavenly-header.jpg);
+  background-size: 100% 100%;
+  background-position: top center;
+  color: white;
+}
+
+h1 {
+  font-size: 3rem;
+}
+#home .homeContent {
+  width: 90%;
+}
+/* Home */
+
+/* Accordion */
+#duration {
+  padding: 50px;
+}
+#duration .accordionBox {
+  width: 50%;
+  margin: auto;
+  padding: 30px;
+}
+#duration .accordionBox .accordionItem .accordionHeader {
+  background-color: rgba(255, 0, 0, 0.4);
+  padding: 10px;
+  cursor: pointer;
+}
+#duration .accordionBox .accordionItem .accordionHeader h2 {
+  color: white;
+}
+#duration .accordionBox .accordionItem .accordionContent {
+  background-color: rgba(100, 100, 100, 0.4);
+  padding: 20px;
+  display: none;
+}
+#duration .accordionBox .accordionItem .accordionContent.active {
+  display: block;
+}
+/* Accordion */
+
+/* Details */
+#details {
+  background-image: linear-gradient(rgba(255, 0, 0, 0.4), rgba(255, 0, 0, 0.4)),
+    url(../images/invitation.jpg);
+  background-position: center center;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  height: 20rem;
+  color: white;
+  margin-block: 20px;
+  padding: 3rem;
+}
+#details .countDown {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem;
+}
+#details .countDown .item {
+  border: solid 1px;
+  padding: 3rem 4rem;
+  margin: 2rem;
+  font-size: 2rem;
+  font-weight: 500;
+}
+/* Details */
+/* contact */
+#contact {
+  padding: 50px;
+}
+#contact .contactContent {
+  padding: 50px;
+  width: 70%;
+  margin: auto;
+}
+#contact .contactContent .contactHeader h2 {
+  font-size: xx-large;
+  text-transform: uppercase;
+}
+#contact .contactContent .contactHeader h2, #contact .contactContent .contactInfoBox .contactInfo h3 {
+  text-align: left;
+}
+#contact .contactContent .contactInfoBox .contactInfo .socialMedia a{
+width: 40px;
+height: 40px;
+border: solid 1px;
+display: flex;
+justify-content: center;
+align-items: center;
+cursor: pointer;
+border-radius: 10px;
+transition: all 0.5s;
+}
+#contact .contactContent .contactInfoBox .contactInfo .socialMedia a:hover{
+  background-color: #BB2D3B;
+}
+#contact .contactContent .contactInfoBox .contactInfo .socialMedia a:hover i{
+color: white !important;
+}
+/* contact */
